@@ -1,14 +1,15 @@
-# main.py
-
-# Importiamo la funzione "stampa_array"
-# dal file "array_generator.py".
-from array_generator import stampa_array
+from array_utils import stampa_array, somma_array
 
 
-# Creiamo un array (lista) di numeri.
-array = [10, 20, 30, 40, 50]
+# Creiamo i due array.
+array1 = [10, 20, 30]
+array2 = [1, 2, 3]
 
 
-# Chiamiamo la funzione "stampa_array"
-# passando il nostro array come parametro.
-stampa_array(array)
+# Chiamiamo la funzione somma_array().
+# Il risultato viene salvato nella variabile "risultato".
+risultato = somma_array(array1, array2)
+
+
+# Stampiamo il risultato.
+stampa_array(risultato)
