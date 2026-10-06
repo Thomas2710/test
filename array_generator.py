@@ -1,8 +1,16 @@
-# Creiamo un array (in Python viene normalmente rappresentato
-# utilizzando una lista) contenente alcuni numeri interi.
-array = [10, 20, 30, 40, 50]
+# array_generator.py
 
-# Stampiamo l'intero array.
-# La funzione print() visualizza sullo schermo
-# il contenuto della variabile.
-print(array)
+# Definiamo una funzione chiamata "stampa_array".
+# La funzione riceve come parametro un array (lista).
+def stampa_array(array):
+
+    # Stampiamo un messaggio per indicare
+    # che stiamo per visualizzare l'array.
+    print("Contenuto dell'array:")
+
+    # Scorriamo tutti gli elementi dell'array
+    # uno alla volta.
+    for elemento in array:
+
+        # Stampiamo l'elemento corrente.
+        print(elemento)
